@@ -39,7 +39,8 @@
 }
 
 .hero {
-  background: url('../images/hero.jpg');
+  background-color: darkgray;
+  background-image: url('../images/hero.jpg');
   height: 70vh;
   background-size: cover;
   background-position: center;
