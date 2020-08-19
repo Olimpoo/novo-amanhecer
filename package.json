@@ -1,0 +1,21 @@
+{
+  "name": "novo-amanhecer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Olimpoo/novo-amanhecer.git",
+  "author": "Olimpoo",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "postcss css/base.css -o css/style.css"
+  },
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^7.1.1",
+    "tailwindcss": "^1.7.2",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.0.5"
+  }
+}

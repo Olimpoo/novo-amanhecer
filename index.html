@@ -3,18 +3,102 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Novo Amanhecer</title>
   </head>
   <body>
-    <h1>Novo Amanhecer</h1>
-  </body>
-</html>
+    <main class="js">
+      <section class="aw-header bg-white border-b border-gray-200 shadow-md">
+        <header
+          class="container mx-auto flex items-center justify-between flex-wrap px-2 py-4 lg:p-6"
+        >
+          <div id="mobile-menu__toggler" class="block md:hidden">
+            <button
+              id="mobile-menu__open"
+              class="px-3 py-1 w-20 border rounded text-white bg-purple-700 border-transparent hover:bg-purple-900 transition"
+            >
+              Menu
+            </button>
+            <button
+              id="mobile-menu__close"
+              class="hidden px-3 py-1 w-20 border rounded text-white bg-purple-700 border-transparent hover:bg-purple-900 transition"
+            >
+              Close
+            </button>
+          </div>
 
-<style>
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-</style>
+          <div
+            class="aw-header__logo flex items-center flex-shrink-0 text-purple-700 hover:text-purple-900 mx-2 lg:mr-6 order-1 transition"
+          >
+            <h1 class="text-lg font-bold">Logo</h1>
+          </div>
+
+          <nav
+            id="mobile-menu__items"
+            class="aw-header__nav hidden w-full block flex-grow md:flex md:items-center md:w-auto order-3 md:order-2"
+          >
+            <ol class="text-lg md:flex-grow md:flex md:justify-start md:ml-16">
+              <li class="block mb-4 mt-3 md:inline-block md:mb-0 md:mt-0 mr-4">
+                <a
+                  href="#responsive-header"
+                  class="text-gray-700 hover:text-gray-900 transition"
+                  >Home</a
+                >
+              </li>
+
+              <li class="block mb-4 md:inline-block md:mb-0 mr-4">
+                <a
+                  href="#responsive-header"
+                  class="text-gray-700 hover:text-gray-900 transition"
+                  >Page 1</a
+                >
+              </li>
+
+              <li class="block mb-4 md:inline-block md:mb-0 mr-4">
+                <a
+                  href="#responsive-header"
+                  class="text-gray-700 hover:text-gray-900 transition"
+                  >Page 2</a
+                >
+              </li>
+            </ol>
+          </nav>
+
+          <div class="flex items-center order-2">
+            <span class="hidden sm:block mr-2">+1 (985) 508-3013</span>
+            <i class="hidden fas fa-camera sm:block mr-2"></i>
+            <i class="hidden fas fa-camera sm:block mr-2"></i>
+            <i class="fas fa-camera mr-2"></i>
+          </div>
+        </header>
+      </section>
+
+      <section
+        class="hero flex flex-col items-center md:items-start justify-center text-white p-8"
+      >
+        <h1 class="text-center text-4xl md:text-6xl font-bold">
+          Novo Amanhecer
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </p>
+        <a class="bg-purple-700 border-2 mt-4 p-4 rounded-md" href="#">
+          Call to Action
+        </a>
+      </section>
+    </main>
+    <div class="bg-purple-700 text-white p-4 pl-8">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam,
+        possimus accusamus?
+      </p>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
