@@ -9,6 +9,10 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Novo Amanhecer</title>
   </head>
@@ -34,9 +38,10 @@
           </div>
 
           <div
-            class="aw-header__logo flex items-center flex-shrink-0 text-purple-700 hover:text-purple-900 mx-2 lg:mr-6 order-1 transition"
+            class="aw-header__logo flex items-center flex-shrink-0 mx-2 lg:mr-6 order-1 transition"
           >
-            <h1 class="text-lg font-bold">Logo</h1>
+            <img src="images/logo-black.png" alt="logo" class="logo" />
+            <span class="text-lg font-bold">Novo Amanhecer</span>
           </div>
 
           <nav
@@ -47,7 +52,7 @@
               <li class="block mb-4 mt-3 md:inline-block md:mb-0 md:mt-0 mr-4">
                 <a
                   href="#responsive-header"
-                  class="text-gray-700 hover:text-gray-900 transition"
+                  class="text-gray-700 hover:text-yellow transition"
                   >Home</a
                 >
               </li>
@@ -55,7 +60,7 @@
               <li class="block mb-4 md:inline-block md:mb-0 mr-4">
                 <a
                   href="#responsive-header"
-                  class="text-gray-700 hover:text-gray-900 transition"
+                  class="text-gray-700 hover:text-yellow transition"
                   >Page 1</a
                 >
               </li>
@@ -63,7 +68,7 @@
               <li class="block mb-4 md:inline-block md:mb-0 mr-4">
                 <a
                   href="#responsive-header"
-                  class="text-gray-700 hover:text-gray-900 transition"
+                  class="text-gray-700 hover:text-yellow transition"
                   >Page 2</a
                 >
               </li>
@@ -88,17 +93,115 @@
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit.
         </p>
-        <a class="bg-purple-700 border-2 mt-4 p-4 rounded-md" href="#">
+        <a
+          class="bg-yellow text-black font-bold text-lg mt-4 p-4 rounded-md"
+          href="#"
+        >
           Call to Action
         </a>
       </section>
     </main>
-    <div class="bg-purple-700 text-white p-4 pl-8">
+    <div class="bg-blue text-white font-bold p-4 pl-8">
       <p>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam,
         possimus accusamus?
       </p>
     </div>
+    <section class="grid md:grid-cols-2 p-16 gap-8 md:p-32 md:gap-16">
+      <div class="feature">
+        <h3 class="text-3xl font-bold">
+          Some Title
+        </h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto a,
+          eaque ipsa inventore et officiis incidunt fugit expedita, nostrum
+          accusantium tempora enim, distinctio vel repellat culpa? Quos quis
+          assumenda sapiente! Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Nulla quis dolore enim nobis quasi culpa nemo obcaecati cum
+          totam incidunt, fugit ipsam ex quibusdam commodi quae repudiandae
+          excepturi quaerat voluptates.
+        </p>
+      </div>
+      <div class="bg-gray-500 w-full h-full">
+        <span>SOME IMAGE</span>
+      </div>
+    </section>
+    <section>
+      <div
+        class="main-carousel"
+        data-flickity='{ "cellAlign": "center", "autoPlay": true }'
+      >
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+        <div class="carousel-cell"></div>
+      </div>
+    </section>
+    <section class="bg-blue">
+      <div
+        class="pricing-table mt-16 p-16 w-full flex items-center justify-center"
+      >
+        <div class="pricing-option">
+          <h3>Title</h3>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+            harum voluptatum, sit cum voluptatibus inventore quae qui provident
+            eveniet dicta at, quibusdam ipsam iusto reprehenderit hic saepe
+            nesciunt sed illo.
+          </p>
+          <hr />
+          <div class="price">
+            <div class="front">
+              <span class="price">199 <b>$</b></span>
+            </div>
+            <div class="back">
+              <a href="#" class="button">Purchase now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-option">
+          <h3>Title</h3>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+            harum voluptatum, sit cum voluptatibus inventore quae qui provident
+            eveniet dicta at, quibusdam ipsam iusto reprehenderit hic saepe
+            nesciunt sed illo.
+          </p>
+          <hr />
+          <div class="price">
+            <div class="front">
+              <span class="price">399 <b>$</b></span>
+            </div>
+            <div class="back">
+              <a href="#" class="button">Purchase now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pricing-option">
+          <h3>Title</h3>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente
+            harum voluptatum, sit cum voluptatibus inventore quae qui provident
+            eveniet dicta at, quibusdam ipsam iusto reprehenderit hic saepe
+            nesciunt sed illo.
+          </p>
+          <hr />
+          <div class="price">
+            <div class="front">
+              <span class="price">999 <b>$</b></span>
+            </div>
+            <div class="back">
+              <a href="#" class="button">Purchase now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="script.js"></script>
 </html>
