@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Gretaros';
+  src: url('../fonts/gretaros/Gretaros-Regular.otf') format('otf'),
+    url('../fonts/gretaros/Gretaros-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('../fonts/Lato/Lato-Regular.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Lato', open-sans;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Gretaros', open-sans;
+}

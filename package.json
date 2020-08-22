@@ -7,7 +7,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "build": "postcss css/base.css -o css/style.css"
+    "tailwind": "postcss css/tailwind.css -o css/tailwind.min.css",
+    "minify": "postcss css/style.css -o css/style.min.css",
+    "build": "yarn run tailwind && yarn run minify"
   },
   "dependencies": {
     "autoprefixer": "^9.8.6",
@@ -17,5 +19,8 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.4",
     "prettier": "^2.0.5"
+  },
+  "devDependencies": {
+    "cssnano": "^4.1.10"
   }
 }

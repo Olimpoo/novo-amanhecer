@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="stylesheet" href="css/tailwind.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <title>Novo Amanhecer</title>
+  </head>
+  <body>
+    <main class="js">
+      <a
+        href="https://api.whatsapp.com/send?phone=584248186872&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n."
+        class="float"
+        target="_blank"
+      >
+        <i class="fab fa-whatsapp my-float"></i>
+      </a>
+      <section class="aw-header bg-white border-b border-gray-200 shadow-md">
+        <header
+          class="container mx-auto flex items-center justify-between flex-wrap px-2 py-4 lg:p-6"
+        >
+          <div id="mobile-menu__toggler" class="block md:hidden">
+            <button
+              id="mobile-menu__open"
+              class="px-3 py-1 w-20 border rounded text-white bg-blue border-transparent"
+            >
+              Menu
+            </button>
+            <button
+              id="mobile-menu__close"
+              class="hidden px-3 py-1 w-20 border rounded text-white bg-blue border-transparent"
+            >
+              Close
+            </button>
+          </div>
+
+          <div
+            class="aw-header__logo flex items-center flex-shrink-0 mx-2 lg:mr-6 order-1 transition"
+          >
+            <img src="images/logo-black.png" alt="logo" class="logo" />
+            <span class="text-lg font-bold">Novo Amanhecer</span>
+          </div>
+
+          <nav
+            id="mobile-menu__items"
+            class="aw-header__nav hidden w-full block flex-grow md:flex md:items-center md:w-auto order-3 md:order-2"
+          >
+            <ol class="text-lg md:flex-grow md:flex md:justify-start md:ml-16">
+              <li class="block mb-4 mt-3 md:inline-block md:mb-0 md:mt-0 mr-4">
+                <a href="/" class="text-gray-700 hover:text-yellow transition"
+                  >Home</a
+                >
+              </li>
+
+              <li class="block mb-4 md:inline-block md:mb-0 mr-4">
+                <a
+                  href="/contact.html"
+                  class="text-gray-700 hover:text-yellow transition"
+                  >Contact</a
+                >
+              </li>
+
+              <li class="block mb-4 md:inline-block md:mb-0 mr-4">
+                <a
+                  href="#responsive-header"
+                  class="text-gray-700 hover:text-yellow transition"
+                  >Page 2</a
+                >
+              </li>
+            </ol>
+            <div class="flex items-center order-2">
+              <span class="hidden sm:block mr-2">+1 (985) 508-3013</span>
+              <i class="hidden fas fa-camera sm:block mr-2"></i>
+              <i class="hidden fas fa-camera sm:block mr-2"></i>
+              <i class="hidden fas fa-camera mr-2"></i>
+            </div>
+          </nav>
+        </header>
+      </section>
+    </main>
+    <section class="p-16 grid grid-cols-1 lg:grid-cols-2">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        class="form bg-white p-6 my-10 relative"
+      >
+        <div
+          class="icon bg-blue-600 text-white w-6 h-6 absolute flex items-center justify-center p-5"
+          style="left: -40px;"
+        >
+          <i
+            class="fal fa-phone-volume fa-fw text-2xl transform -rotate-45"
+          ></i>
+        </div>
+        <h3 class="text-2xl text-gray-900 font-semibold">Let us call you!</h3>
+        <p class="text-gray-600">Other text</p>
+        <div class="flex space-x-5 mt-3">
+          <input
+            type="text"
+            name=""
+            id=""
+            placeholder="Your Name"
+            class="border p-2 w-1/2"
+            required
+          />
+          <input
+            type="tel"
+            name=""
+            id=""
+            placeholder="Your Number"
+            class="border p-2 w-1/2"
+            required
+          />
+        </div>
+        <input
+          type="email"
+          name=""
+          id=""
+          placeholder="Your Email"
+          class="border p-2 w-full mt-3"
+          required
+        />
+        <textarea
+          name=""
+          id=""
+          cols="10"
+          rows="3"
+          placeholder="Tell us"
+          class="border p-2 mt-3 w-full"
+          required
+        ></textarea>
+        <p class="font-bold text-sm mt-3">GDPR Agreement *</p>
+        <div class="flex items-baseline space-x-2 mt-2">
+          <input type="checkbox" name="" id="" class="inline-block" required />
+          <p class="text-gray-600 text-sm">
+            I consent to having this website store my submitted information so
+            they can respond to my inquiry.
+          </p>
+        </div>
+        <input
+          type="submit"
+          value="Submit"
+          class="w-full mt-6 bg-yellow text-black font-semibold p-3"
+        />
+      </form>
+    </section>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#273036"
+        fill-opacity="1"
+        d="M0,160L40,165.3C80,171,160,181,240,186.7C320,192,400,192,480,181.3C560,171,640,149,720,133.3C800,117,880,107,960,112C1040,117,1120,139,1200,149.3C1280,160,1360,160,1400,160L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+      ></path>
+    </svg>
+    <footer
+      class="flex flex-col md:flex-row bg-black text-yellow justify-between text-left p-16 pb-24 pt-0"
+    >
+      <div class="flex items-center w-auto">
+        <img
+          src="images/logo nova a manecer.png"
+          class="w-16"
+          alt="nova-amanhecer"
+        />
+        <div class="text-left">
+          <h3 class="text-lg">NOVO AMANHECER</h3>
+          <span>Some text here</span>
+        </div>
+      </div>
+      <div class="flex flex-col items-start text-left w-auto mt-4 lg:mt-0">
+        <span class="hidden sm:block mr-2">+1 (985) 508-3013</span>
+        <div class="flex items-center">
+          <i class="hidden fas fa-camera sm:block mr-2"></i>
+          <span>facebook.com</span>
+        </div>
+        <div class="flex items-center">
+          <i class="hidden fas fa-camera sm:block mr-2"></i>
+          <span>instagram.com</span>
+        </div>
+      </div>
+      <div class="flex flex-col text-left w-auto mt-4 lg:mt-0">
+        <p>Other info...</p>
+      </div>
+    </footer>
+    <div class="bg-blue w-full h-1"></div>
+  </body>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="scripts.js"></script>
+</html>

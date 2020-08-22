@@ -20,11 +20,12 @@ document.getElementById('mobile-menu__close').addEventListener(
   false
 );
 
-var options = {
+const options = {
   accessibility: true,
   prevNextButtons: true,
   pageDots: true,
   setGallerySize: false,
+  autoPlay: true,
   arrowShape: {
     x0: 10,
     x1: 60,
@@ -35,14 +36,14 @@ var options = {
   },
 };
 
-var carousel = document.querySelector('[data-carousel]');
-var slides = document.getElementsByClassName('carousel-cell');
-var flkty = new Flickity(carousel, options);
+const carousel = document.querySelector('[data-carousel]');
+const slides = document.getElementsByClassName('carousel-cell');
+const flkty = new Flickity(carousel, options);
 
 flkty.on('scroll', function () {
   flkty.slides.forEach(function (slide, i) {
-    var image = slides[i];
-    var x = ((slide.target + flkty.x) * -1) / 3;
+    const image = slides[i];
+    const x = ((slide.target + flkty.x) * -1) / 3;
     image.style.backgroundPosition = x + 'px';
   });
 });

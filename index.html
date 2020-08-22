@@ -13,11 +13,20 @@
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tailwind.min.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <title>Novo Amanhecer</title>
   </head>
   <body>
     <main class="js">
+      <a
+        href="https://api.whatsapp.com/send?phone=584248186872&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n."
+        class="float"
+        target="_blank"
+      >
+        <i class="fab fa-whatsapp my-float"></i>
+      </a>
       <section class="aw-header bg-white border-b border-gray-200 shadow-md">
         <header
           class="container mx-auto flex items-center justify-between flex-wrap px-2 py-4 lg:p-6"
@@ -50,18 +59,16 @@
           >
             <ol class="text-lg md:flex-grow md:flex md:justify-start md:ml-16">
               <li class="block mb-4 mt-3 md:inline-block md:mb-0 md:mt-0 mr-4">
-                <a
-                  href="#responsive-header"
-                  class="text-gray-700 hover:text-yellow transition"
+                <a href="/" class="text-gray-700 hover:text-yellow transition"
                   >Home</a
                 >
               </li>
 
               <li class="block mb-4 md:inline-block md:mb-0 mr-4">
                 <a
-                  href="#responsive-header"
+                  href="/contact.html"
                   class="text-gray-700 hover:text-yellow transition"
-                  >Page 1</a
+                  >Contact</a
                 >
               </li>
 
@@ -74,12 +81,11 @@
               </li>
             </ol>
           </nav>
-
-          <div class="flex items-center order-2">
+          <div class="flex items-center order-3">
             <span class="hidden sm:block mr-2">+1 (985) 508-3013</span>
             <i class="hidden fas fa-camera sm:block mr-2"></i>
             <i class="hidden fas fa-camera sm:block mr-2"></i>
-            <i class="fas fa-camera mr-2"></i>
+            <i class="hidden fas fa-camera mr-2"></i>
           </div>
         </header>
       </section>
@@ -294,5 +300,5 @@
     <div class="bg-blue w-full h-1"></div>
   </body>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-  <script src="script.js"></script>
+  <script src="scripts.js"></script>
 </html>
