@@ -84,22 +84,44 @@
         </header>
       </section>
 
-      <section
-        class="hero flex flex-col items-center md:items-start justify-center text-white p-8"
-      >
-        <h1 class="text-center text-4xl md:text-6xl font-bold">
-          Novo Amanhecer
-        </h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-        </p>
-        <a
-          class="bg-yellow text-black font-bold text-lg mt-4 p-4 rounded-md"
-          href="#"
+      <div class="hero-slider" data-carousel>
+        <div
+          class="carousel-cell"
+          style="background-image: url('images/hero.jpg');"
         >
-          Call to Action
-        </a>
-      </section>
+          <div class="overlay"></div>
+          <div class="inner">
+            <h2 class="title">NOVA AMANHECER</h2>
+            <a href="https://flickity.metafizzy.co/" target="_blank" class="btn"
+              >Tell me more</a
+            >
+          </div>
+        </div>
+        <div
+          class="carousel-cell"
+          style="background-image: url('images/hero.jpg');"
+        >
+          <div class="overlay"></div>
+          <div class="inner">
+            <h2 class="title">NOVA AMANHECER</h2>
+            <a href="https://flickity.metafizzy.co/" target="_blank" class="btn"
+              >Tell me more</a
+            >
+          </div>
+        </div>
+        <div
+          class="carousel-cell"
+          style="background-image: url('images/hero.jpg');"
+        >
+          <div class="overlay"></div>
+          <div class="inner">
+            <h2 class="title">NOVA AMANHECER</h2>
+            <a href="https://flickity.metafizzy.co/" target="_blank" class="btn"
+              >Tell me more</a
+            >
+          </div>
+        </div>
+      </div>
     </main>
     <div class="bg-blue text-white font-bold p-4 pl-8">
       <p>
@@ -124,16 +146,6 @@
       </div>
       <div class="bg-gray-500 w-full h-full">
         <span>SOME IMAGE</span>
-      </div>
-    </section>
-    <section>
-      <div
-        class="main-carousel"
-        data-flickity='{ "cellAlign": "center", "autoPlay": true }'
-      >
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
-        <div class="carousel-cell"></div>
       </div>
     </section>
     <section class="bg-blue mt-8 text-center">
