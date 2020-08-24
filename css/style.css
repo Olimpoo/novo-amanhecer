@@ -35,7 +35,7 @@
 .hero {
   background-color: darkgray;
   background-image: url('../images/hero.jpg');
-  height: 80vh;
+  height: 85vh;
   background-size: cover;
   background-position: center;
 }
@@ -160,13 +160,13 @@
   right: 0;
   background: linear-gradient(
     to bottom,
-    rgba(14, 29, 51, 0.8),
+    rgba(14, 29, 51, 0.5),
     rgba(14, 29, 51, 0.2)
   );
 }
 .hero-slider {
   width: 100%;
-  height: 80vh;
+  height: 720px;
   overflow: hidden;
 }
 .hero-slider .carousel-cell {
@@ -174,7 +174,16 @@
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+}
+
+.hero-slider .carousel-cell {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-slider .carousel-cell.fix {
+  background-position: bottom !important;
 }
 .hero-slider .carousel-cell .inner {
   position: relative;
