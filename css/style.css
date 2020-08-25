@@ -166,7 +166,7 @@
 }
 .hero-slider {
   width: 100%;
-  height: 620px;
+  height: 720px;
   overflow: hidden;
 }
 .hero-slider .carousel-cell {
@@ -182,6 +182,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .hero-slider .carousel-cell.fix {
   background-position: bottom !important;
 }
