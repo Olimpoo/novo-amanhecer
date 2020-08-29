@@ -14,7 +14,7 @@
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
     />
     <link rel="stylesheet" href="css/tailwind.min.css" />
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <title>Novo Amanhecer</title>
   </head>
@@ -49,7 +49,7 @@
           <div
             class="aw-header__logo flex items-center flex-shrink-0 mx-2 lg:mr-6 order-1 transition"
           >
-            <img src="images/logo-black.png" alt="logo" class="logo" />
+            <img src="images/logo nova a manecer.png" alt="logo" class="logo" />
             <span class="text-lg font-bold">NOVO Amanhecer</span>
           </div>
 
@@ -66,25 +66,33 @@
 
               <li class="block mb-4 md:inline-block md:mb-0 mr-4">
                 <a
+                  href="#"
+                  class="text-gray-700 hover:text-yellow transition"
+                  >Perú</a
+                >
+              </li>
+
+              <li class="block mb-4 md:inline-block md:mb-0 mr-4">
+                <a
+                  href="#"
+                  class="text-gray-700 hover:text-yellow transition"
+                  >Vuelos Internacionales</a
+                >
+              </li>
+
+              <li class="block mb-4 md:inline-block md:mb-0 mr-4">
+                <a
                   href="/contact.html"
                   class="text-gray-700 hover:text-yellow transition"
                   >Contacto</a
                 >
               </li>
-
-              <!-- <li class="block mb-4 md:inline-block md:mb-0 mr-4">
-                <a
-                  href="#responsive-header"
-                  class="text-gray-700 hover:text-yellow transition"
-                  >Page 2</a
-                >
-              </li> -->
             </ol>
           </nav>
           <div class="flex items-center order-3">
-            <span class="hidden sm:block mr-2">(+51) 977-953-958 /</span>
-            <span class="hidden sm:block mr-2"> 933-535-679 /</span>
-            <span class="hidden sm:block mr-2"> 922-673-793</span>
+            <span class="hidden lg:block mr-2">977-953-958</span>
+            <span class="hidden xl:block mr-2">933-535-679</span>
+            <span class="hidden xl:block mr-2">922-673-793</span>
             <a
               href="https://www.facebook.com/NOVO-Amanhecer-Turismo-111428663834876"
               target="_blank"
@@ -96,7 +104,11 @@
         </header>
       </section>
     </main>
-    <section class="p-16 grid grid-cols-1 grid-rows-2 lg:grid-cols-2 lg:grid-rows-1">
+    <section class="hero-contact text-white text-center w-full flex flex-col items-center justify-center lg:justify-start">
+      <h3 class="text-4xl lg:mt-24">Contáctenos</h3>
+      <span class="text-4xl">¡Queremos conocer tus inquietudes!</span>
+    </section>
+    <section class="p-16 grid grid-cols-1 grid-rows-2 lg:grid-cols-2 lg:grid-rows-1 items-center justify-center">
       <form
         name="contact"
         method="POST"
@@ -118,7 +130,7 @@
             type="text"
             name="name"
             id=""
-            placeholder="Your Name"
+            placeholder="Nombre"
             class="border p-2 w-1/2"
             required
           />
@@ -126,7 +138,7 @@
             type="tel"
             name="number"
             id=""
-            placeholder="Your Number"
+            placeholder="Número"
             class="border p-2 w-1/2"
             required
           />
@@ -135,7 +147,7 @@
           type="email"
           name="email"
           id=""
-          placeholder="Your Email"
+          placeholder="Correo electrónico"
           class="border p-2 w-full mt-3"
           required
         />
@@ -144,25 +156,65 @@
           id=""
           cols="10"
           rows="3"
-          placeholder="Tell us"
+          placeholder="Cuéntenos su inquietud..."
           class="border p-2 mt-3 w-full"
           required
         ></textarea>
-        <p class="font-bold text-sm mt-3">GDPR Agreement *</p>
+        <p class="font-bold text-sm mt-3">Acuerdo de información personal *</p>
         <div class="flex items-baseline space-x-2 mt-2">
           <input type="checkbox" name="" id="" class="inline-block" required />
           <p class="text-gray-600 text-sm">
-            I consent to having this website store my submitted information so
-            they can respond to my inquiry.
+            Doy mi consentimiento para que este sitio web almacene la información enviada para que puedan responder a mi consulta.
           </p>
         </div>
         <input
           type="submit"
-          value="Submit"
+          value="Enviar"
           class="w-full mt-6 bg-yellow text-black font-semibold p-3"
         />
       </form>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1951.1610914473858!2d-77.10726064200833!3d-12.021326397871059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cc21da928bbd%3A0x207b30e7c9cc2bde!2sAv.%20Elmer%20Faucett%20166%2C%20Callao%2007036%2C%20Per%C3%BA!5e0!3m2!1ses-419!2sve!4v1598654866775!5m2!1ses-419!2sve" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <div class="w-full flex flex-col items-center justify-center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1951.1610914473858!2d-77.10726064200833!3d-12.021326397871059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cc21da928bbd%3A0x207b30e7c9cc2bde!2sAv.%20Elmer%20Faucett%20166%2C%20Callao%2007036%2C%20Per%C3%BA!5e0!3m2!1ses-419!2sve!4v1598654866775!5m2!1ses-419!2sve" class="md:hidden" width="300" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1951.1610914473858!2d-77.10726064200833!3d-12.021326397871059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cc21da928bbd%3A0x207b30e7c9cc2bde!2sAv.%20Elmer%20Faucett%20166%2C%20Callao%2007036%2C%20Per%C3%BA!5e0!3m2!1ses-419!2sve!4v1598654866775!5m2!1ses-419!2sve" class="hidden md:block lg:hidden" width="500" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1951.1610914473858!2d-77.10726064200833!3d-12.021326397871059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105cc21da928bbd%3A0x207b30e7c9cc2bde!2sAv.%20Elmer%20Faucett%20166%2C%20Callao%2007036%2C%20Per%C3%BA!5e0!3m2!1ses-419!2sve!4v1598654866775!5m2!1ses-419!2sve" class="hidden lg:block" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="flex items-center mt-2">
+          <i class="fas fa-map-marker-alt sm:block mr-2"></i>
+          <span>Av. Elmer Faucett s/n Grifo Aeropuerto (Frente al aeropuerto Jorge Chávez)</span>
+        </div>
+        <div class="flex items-center mt-2">
+          <i class="fab fa-facebook sm:block mr-2"></i>
+          <a
+            href="https://www.facebook.com/NOVO-Amanhecer-Turismo-111428663834876"
+            target="_blank"
+            rel="noopener noreferrer"
+            >NOVO Amanhecer Turismo</a
+          >
+        </div>
+        <div class="flex flex-col md:flex-row items-center mt-2">
+          <i class="fab fa-whatsapp sm:block mr-2"></i>
+          <a
+            class="sm:block mr-2"
+            href="https://api.whatsapp.com/send?phone=51922673793&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n."
+            target="_blank"
+            rel="noopener noreferrer"
+            >(+51) 977-953-958</a
+          >
+          <a
+            class="sm:block mr-2"
+            href="https://api.whatsapp.com/send?phone=51922673793&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n."
+            target="_blank"
+            rel="noopener noreferrer"
+            >933-535-679</a
+          >
+          <a
+            class="sm:block mr-2"
+            href="https://api.whatsapp.com/send?phone=51922673793&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n."
+            target="_blank"
+            rel="noopener noreferrer"
+            >922-673-793</a
+          >
+        </div>
+      </div>
     </section>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path

@@ -350,3 +350,9 @@
   left: 100%;
   top: 0;
 }
+
+.hero-contact {
+  height: 80vh;
+  background: url('../images/airplane.jpg');
+  background-size: cover;
+}
